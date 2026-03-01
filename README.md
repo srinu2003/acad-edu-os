@@ -1,9 +1,5 @@
 # Acad Institute ERP 🎓
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
-[![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://opensource.org/)
-
 > A modern, secure, and scalable Enterprise Resource Planning (ERP) system designed for educational institutions.
 
 Acad ERP is a comprehensive web-based management system for colleges and universities, built with modern technologies and security best practices. It handles student management, academic records, attendance tracking, fee management, and more.

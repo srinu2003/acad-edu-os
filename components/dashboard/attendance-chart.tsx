@@ -33,10 +33,11 @@ export function AttendanceChart() {
               <YAxis domain={[0, 100]} tick={{ fontSize: 12 }} className="text-muted-foreground" />
               <Tooltip
                 contentStyle={{
-                  backgroundColor: "hsl(var(--popover))",
-                  border: "1px solid hsl(var(--border))",
+                  backgroundColor: "var(--color-popover)",
+                  border: "1px solid var(--color-border)",
                   borderRadius: "var(--radius)",
                   fontSize: "12px",
+                  color: "var(--color-popover-foreground)",
                 }}
                 formatter={(value: number) => [`${value.toFixed(1)}%`, "Attendance"]}
               />

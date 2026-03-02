@@ -7,13 +7,13 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { courseAttendance } from "@/lib/mock-data"
 
-const chartData = courseAttendance.map((ca) => ({
-  name: ca.courseCode,
-  percentage: ca.percentage,
-  fill: ca.percentage < 75 ? "var(--color-destructive)" : ca.percentage < 85 ? "var(--color-chart-3)" : "var(--color-chart-2)",
-}))
-
 export function AttendanceChart() {
+  const chartData = courseAttendance.map((ca) => ({
+    name: ca.courseCode,
+    percentage: ca.percentage,
+    color: ca.percentage < 75 ? "#dc2626" : ca.percentage < 85 ? "#f97316" : "#16a34a",
+  }))
+
   return (
     <Card>
       <CardHeader className="flex flex-row items-center justify-between pb-3">
@@ -33,17 +33,17 @@ export function AttendanceChart() {
               <YAxis domain={[0, 100]} tick={{ fontSize: 12 }} className="text-muted-foreground" />
               <Tooltip
                 contentStyle={{
-                  backgroundColor: "var(--color-popover)",
-                  border: "1px solid var(--color-border)",
-                  borderRadius: "var(--radius)",
+                  backgroundColor: "#ffffff",
+                  border: "1px solid #e5e7eb",
+                  borderRadius: "0.5rem",
                   fontSize: "12px",
-                  color: "var(--color-popover-foreground)",
+                  color: "#1f2937",
                 }}
                 formatter={(value: number) => [`${value.toFixed(1)}%`, "Attendance"]}
               />
               <Bar dataKey="percentage" radius={[4, 4, 0, 0]} maxBarSize={40}>
                 {chartData.map((entry, index) => (
-                  <Cell key={index} fill={entry.fill} />
+                  <Cell key={index} fill={entry.color} />
                 ))}
               </Bar>
             </BarChart>

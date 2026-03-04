@@ -2,6 +2,8 @@
 
 > A modern, secure, and scalable Enterprise Resource Planning (ERP) system designed for educational institutions.
 
+📊 **[Track Project Progress](https://docs.google.com/spreadsheets/d/1pqT0AFtc2r9zoU6f0xmcxPFFCQVbB7y0OELzbZMvCyg/edit?usp=sharing)** - View our development roadmap and task tracking
+
 Acad ERP is a comprehensive web-based management system for colleges and universities, built with modern technologies and security best practices. It handles student management, academic records, attendance tracking, fee management, and more.
 
 ---
